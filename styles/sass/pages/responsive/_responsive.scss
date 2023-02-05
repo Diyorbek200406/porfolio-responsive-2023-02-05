@@ -14,7 +14,7 @@
     position: fixed;
     background: #fff;
     top: 0;
-    right: 0;  
+    right: 0;
     width: 380px;
     height: 100%;
     display: flex;
@@ -35,7 +35,7 @@
     background: crimson;
     color: #fff;
   }
-  
+
   .menu-btn {
     position: absolute;
     background: url(../../../../images/menu.png) no-repeat;
@@ -92,4 +92,37 @@
   .contact-form {
     padding: 35px 40px;
   }
+}
+// reveal taglari
+
+.scrollToTop-btn {
+  z-index: 999;
+  position: fixed;
+  background: crimson;
+  color: #fff;
+  width: 45px;
+  height: 45px;
+  right: 0;
+  bottom: 10px;
+  font-size: 22px;
+  text-align: center;
+  line-height: 45px;
+  border-radius: 3px;
+  cursor: pointer;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+.scrollToTop-btn.active {
+  right: 20px;
+  opacity: 1;
+}
+.reveal {
+  position: relative;
+  transform: translateY(50px);
+  opacity: 1;
+  transition: all 1.3s ease;
+}
+.reveal.active {
+  transform: translateY(0px);
+  opacity: 1;
 }
